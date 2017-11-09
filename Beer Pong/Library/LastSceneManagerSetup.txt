@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Pong.unity
+- path: Assets/Title screen.unity
   isLoaded: 1
   isActive: 1
