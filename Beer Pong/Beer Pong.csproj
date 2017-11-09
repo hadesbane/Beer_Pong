@@ -78,7 +78,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Color_Changer.cs" />
+    <Compile Include="Assets\Ball\Color_Changer.cs" />
+    <Compile Include="Assets\Player\Player_Movement.cs" />
+    <Compile Include="Assets\Player\player2_optional_movement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
