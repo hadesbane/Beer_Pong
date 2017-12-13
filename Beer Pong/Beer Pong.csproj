@@ -78,6 +78,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HitRecorder.cs" />
     <Compile Include="Assets\Objects\Ball\Ball_Spawn.cs" />
     <Compile Include="Assets\Objects\Ball\Color_Changer.cs" />
     <Compile Include="Assets\Objects\Goals\Goal.cs" />

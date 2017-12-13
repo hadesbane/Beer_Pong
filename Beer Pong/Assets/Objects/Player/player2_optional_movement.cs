@@ -47,13 +47,20 @@ public class player2_optional_movement : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Top Border") //If colliding with the top border of the game, do not allow upwards movement
+        GameObject game = collision.gameObject;
+        if (game.tag == "Top Border") //If colliding with the top border of the game, do not allow upwards movement
         {
             up = true;
         }
-        else if (collision.gameObject.tag == "Bottom Border") //If colliding with the bottom border of the game, do not allow movement downwards
+        else if (game.tag == "Bottom Border") //If colliding with the bottom border of the game, do not allow movement downwards
         {
             down = true;
+        }
+
+        if(game.tag == "Ball")
+        {
+            game.GetComponent<HitRecorder>().PlayerHit(2);
+            //changes the recorder to have player 2 last hitting the ball
         }
     }
 }

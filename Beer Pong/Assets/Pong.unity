@@ -358,6 +358,16 @@ Prefab:
       propertyPath: coop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 50532663863779058, guid: 8df83f0c623544c4c80aba2eecd5ddaf,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50532663863779058, guid: 8df83f0c623544c4c80aba2eecd5ddaf,
+        type: 2}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8df83f0c623544c4c80aba2eecd5ddaf, type: 2}
   m_IsPrefabParent: 0
@@ -454,7 +464,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5d1d30cc008bdc948af7fb26f9c79d94, type: 3}
-  m_Color: {r: 0.3803922, g: 0.3803922, b: 0.3803922, a: 1}
+  m_Color: {r: 0.3803922, g: 0.3803922, b: 0.3803922, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -559,6 +569,11 @@ Prefab:
     - target: {fileID: 1941332277357860, guid: 8530cc1594fdfa441a8b31eafa0f8622, type: 2}
       propertyPath: m_TagString
       value: Left Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 212165842441986314, guid: 8530cc1594fdfa441a8b31eafa0f8622,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8530cc1594fdfa441a8b31eafa0f8622, type: 2}
@@ -699,6 +714,16 @@ Prefab:
         type: 2}
       propertyPath: m_Constraints
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 50532663863779058, guid: 8df83f0c623544c4c80aba2eecd5ddaf,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50532663863779058, guid: 8df83f0c623544c4c80aba2eecd5ddaf,
+        type: 2}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114893383187488770, guid: 8df83f0c623544c4c80aba2eecd5ddaf, type: 2}
