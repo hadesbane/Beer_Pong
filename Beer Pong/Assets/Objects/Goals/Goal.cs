@@ -21,6 +21,7 @@ public class Goal : MonoBehaviour {
         if (collision.gameObject.tag == "Ball"){
             //score.changeScore(this.gameObject);
             this.ballSpawn.respawn = true;
+            GameObject.Destroy(collision.gameObject);
 
         }
     }

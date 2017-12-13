@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 196394677}
   m_Layer: 0
   m_Name: Borders (1)
-  m_TagString: Untagged
+  m_TagString: Top Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,7 +165,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.04587458}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -176,7 +176,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.9082508}
   m_EdgeRadius: 0
 --- !u!212 &196394678
 SpriteRenderer:
@@ -297,6 +297,11 @@ Prefab:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 114354050339391168, guid: dd987f53492fb704d9ec2dbb6f4c3e47,
+        type: 2}
+      propertyPath: useColorChange
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd987f53492fb704d9ec2dbb6f4c3e47, type: 2}
   m_IsPrefabParent: 0
@@ -309,7 +314,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4192850647176976, guid: 8df83f0c623544c4c80aba2eecd5ddaf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.57
+      value: -10.21
       objectReference: {fileID: 0}
     - target: {fileID: 4192850647176976, guid: 8df83f0c623544c4c80aba2eecd5ddaf, type: 2}
       propertyPath: m_LocalPosition.y
@@ -347,6 +352,11 @@ Prefab:
     - target: {fileID: 1234015087511672, guid: 8df83f0c623544c4c80aba2eecd5ddaf, type: 2}
       propertyPath: m_Name
       value: Player One
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893383187488770, guid: 8df83f0c623544c4c80aba2eecd5ddaf,
+        type: 2}
+      propertyPath: coop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8df83f0c623544c4c80aba2eecd5ddaf, type: 2}
@@ -460,7 +470,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053091461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.09, y: 0.05, z: 0}
+  m_LocalPosition: {x: 11.16, y: 0.05, z: 0}
   m_LocalScale: {x: 0.59999955, y: 9.871884, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -512,7 +522,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4909316081388774, guid: 8530cc1594fdfa441a8b31eafa0f8622, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -11.07
+      value: -11.12
       objectReference: {fileID: 0}
     - target: {fileID: 4909316081388774, guid: 8530cc1594fdfa441a8b31eafa0f8622, type: 2}
       propertyPath: m_LocalPosition.y
@@ -597,6 +607,20 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 323798ada0aef4d4c92ede255c70cfa2, type: 2}
+    - target: {fileID: 1285748834575388, guid: 2a63951be92b3a3418f06e4548919e25, type: 2}
+      propertyPath: m_TagString
+      value: Bottom Border
+      objectReference: {fileID: 0}
+    - target: {fileID: 61840764214208406, guid: 2a63951be92b3a3418f06e4548919e25,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.045874506
+      objectReference: {fileID: 0}
+    - target: {fileID: 61840764214208406, guid: 2a63951be92b3a3418f06e4548919e25,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.908251
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a63951be92b3a3418f06e4548919e25, type: 2}
   m_IsPrefabParent: 0
@@ -637,7 +661,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4192850647176976, guid: 8df83f0c623544c4c80aba2eecd5ddaf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.54
+      value: 10.16
       objectReference: {fileID: 0}
     - target: {fileID: 4192850647176976, guid: 8df83f0c623544c4c80aba2eecd5ddaf, type: 2}
       propertyPath: m_LocalPosition.y
@@ -785,6 +809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a72845cd00f01b4d97e497936a8a4ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 5
   rotation: 0
-  coop: 0
+  coop: 1

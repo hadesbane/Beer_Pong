@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 536713436c43047408ea007f57fc2df5
-timeCreated: 1510264201
+timeCreated: 1513034803
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -80,10 +80,10 @@ TextureImporter:
       name: 2 player button_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 50
-        height: 20
+        x: 2
+        y: 5
+        width: 44
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -94,10 +94,10 @@ TextureImporter:
       name: 2 player button_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 50
-        height: 20
+        x: 52
+        y: 5
+        width: 44
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

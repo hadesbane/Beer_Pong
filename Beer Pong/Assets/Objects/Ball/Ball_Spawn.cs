@@ -44,12 +44,12 @@ public class Ball_Spawn : MonoBehaviour {
         bool directionBinary = (Random.value < 0.5f) ? true : false; // True, ball goes right, false, it goes left
         if (directionBinary) 
         {
-            vec = new Vector2(Random.value * this.speed + 2.5f, this.speed);
+            vec = new Vector2(this.speed, this.speed);
             //Random x speed sent to the right (positive)
         }
         else
         {
-            vec = new Vector2(Random.value * -this.speed - 2.5f, this.speed);
+            vec = new Vector2(-this.speed, this.speed);
         }
         return vec;
     }

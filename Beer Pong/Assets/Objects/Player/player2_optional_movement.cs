@@ -9,6 +9,9 @@ public class player2_optional_movement : MonoBehaviour {
     public bool rotation;
     public bool coop;
 
+    private bool down; //Stops downward movement
+    private bool up; //Stops upward movement
+
     // Use this for initialization
     void Start()
     {
@@ -16,18 +19,20 @@ public class player2_optional_movement : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        body.velocity = new Vector2(0, 0);
         if (coop)
         {
-            body.velocity = new Vector3(0, 0);
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow) && !up)
             {
                 body.velocity = new Vector2(0, speed);
+                down = false;
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
-            {
+            else if (Input.GetKey(KeyCode.DownArrow) && !down)
+            { 
                 body.velocity = new Vector2(0, -speed);
+                up = false;
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
@@ -37,6 +42,18 @@ public class player2_optional_movement : MonoBehaviour {
             {
                 body.velocity = new Vector3(0, body.velocity.y, -speed);
             }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Top Border") //If colliding with the top border of the game, do not allow upwards movement
+        {
+            up = true;
+        }
+        else if (collision.gameObject.tag == "Bottom Border") //If colliding with the bottom border of the game, do not allow movement downwards
+        {
+            down = true;
         }
     }
 }
