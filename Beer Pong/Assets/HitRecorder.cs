@@ -23,16 +23,10 @@ public class HitRecorder : MonoBehaviour {
     }
 
     //changes the record of who last hit the ball
+    // 0 will be left player, 1 shall be right player
     public void PlayerHit(int player)
     {
         this.player = player;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "coin")
-        {
-
-        }
-    }
 }

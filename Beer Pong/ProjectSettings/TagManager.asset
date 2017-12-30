@@ -9,6 +9,7 @@ TagManager:
   - Ball
   - Top Border
   - Bottom Border
+  - Split Coin
   layers:
   - Default
   - TransparentFX

@@ -81,6 +81,7 @@
     <Compile Include="Assets\HitRecorder.cs" />
     <Compile Include="Assets\Objects\Ball\Ball_Spawn.cs" />
     <Compile Include="Assets\Objects\Ball\Color_Changer.cs" />
+    <Compile Include="Assets\Objects\Ball\Speed_Limiter.cs" />
     <Compile Include="Assets\Objects\Buttons\TitleChange.cs" />
     <Compile Include="Assets\Objects\Goals\Goal.cs" />
     <Compile Include="Assets\Objects\Player\Player_Movement.cs" />
