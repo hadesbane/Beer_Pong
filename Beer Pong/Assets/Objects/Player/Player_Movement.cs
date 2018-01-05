@@ -76,7 +76,11 @@ public class Player_Movement : MonoBehaviour {
 
         if(game.tag == "Ball")
         {
-            game.GetComponent<HitRecorder>().PlayerHit(1);
+            HitRecorder recorder = game.GetComponent<HitRecorder>();
+            if (recorder.GetRecord() != 0)
+            {
+                game.GetComponent<HitRecorder>().PlayerHit(0);
+            }
             //tells recorder that player 1 is now the last hitter on the ball (used for coin abilities)
         }
     }

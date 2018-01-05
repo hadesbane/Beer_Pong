@@ -59,8 +59,12 @@ public class player2_optional_movement : MonoBehaviour {
 
         if(game.tag == "Ball")
         {
-            game.GetComponent<HitRecorder>().PlayerHit(2);
-            //changes the recorder to have player 2 last hitting the ball
+            HitRecorder record = game.GetComponent<HitRecorder>();
+            if (record.GetRecord() != 1)
+            {
+                game.GetComponent<HitRecorder>().PlayerHit(1);
+            }
+                //changes the recorder to have player 2 last hitting the ball
         }
     }
 }
