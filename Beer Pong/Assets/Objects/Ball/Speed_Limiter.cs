@@ -5,6 +5,7 @@ using UnityEngine;
 public class Speed_Limiter : MonoBehaviour {
     public float maxSpeed;
     private Rigidbody2D body;
+    private float currY;
 
 	// Use this for initialization
 	void Start () {
@@ -13,11 +14,12 @@ public class Speed_Limiter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        this.currY = this.body.velocity.y;
 		if(this.body.velocity.x > maxSpeed)
         {
             this.body.velocity = new Vector3(maxSpeed, this.body.velocity.y);
         }
-        else if(this.body.velocity.y < -maxSpeed)
+        else if(this.body.velocity.x < -maxSpeed)
         {
             this.body.velocity = new Vector3(-maxSpeed, this.body.velocity.y); 
         }
