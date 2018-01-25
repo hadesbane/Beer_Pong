@@ -10,6 +10,8 @@ TagManager:
   - Top Border
   - Bottom Border
   - Split Coin
+  - Split Bot
+  - Split Top
   layers:
   - Default
   - TransparentFX

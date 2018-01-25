@@ -89,6 +89,8 @@
     <Compile Include="Assets\Objects\Player\Player_Movement.cs" />
     <Compile Include="Assets\Objects\Player\player2_optional_movement.cs" />
     <Compile Include="Assets\Objects\ScoreKeeper.cs" />
+    <Compile Include="Assets\Split_movement.cs" />
+    <Compile Include="Assets\SplitCoin.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

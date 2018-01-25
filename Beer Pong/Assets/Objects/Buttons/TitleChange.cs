@@ -17,11 +17,11 @@ public class TitleChange : MonoBehaviour {
     void Update()
     {
         button = button % 3; //always be on one of 3 buttons
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             button++;
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             button--;
             if (button < 0)
@@ -40,7 +40,7 @@ public class TitleChange : MonoBehaviour {
     //checks if a option on screen has been chosen and switches to that if so.
     void SwitchStage()
     {
-        if (Input.GetKey(KeyCode.KeypadEnter))
+        if (Input.GetKey(KeyCode.Return))
         {
             if (button == 0)
             {
